@@ -1,2 +1,2 @@
-Mar Julius B. Ubas
-kent Cedrick O. Celajes
+Mar Julius B. Ubas, 
+Kent Cedrick O. Celajes
