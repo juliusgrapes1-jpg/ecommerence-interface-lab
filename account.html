@@ -2,13 +2,14 @@
 <html>
 <head>
     <title>My Account</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h2>Welcome,JULIUS </h2>
+    <h2>Welcome, JULIUS</h2>
     <nav>
-        <ul>
+        <ul class="order-history">
             <li><a href="#">History</a></li>
             <li><a href="#">Profile Settings</a></li>
             <li><a href="#">Wishlist</a></li>
@@ -18,15 +19,16 @@
 
 <section>
     <h3>Previous Purchases</h3>
-
-    <details>
-        <summary>Order 1</summary>
-        <p>Date: Feb 14, 2026</p>
-        <p>Total: $320</p>
-    </details>
+    <ul class="order-history">
+        <li>
+            <details>
+                <summary>Order 1</summary>
+                <p>Date: Feb 14, 2026</p>
+                <p>Total: <span class="price">320</span></p>
+            </details>
+        </li>
+    </ul>
 </section>
 
 </body>
 </html>
-
-

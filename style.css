@@ -1,0 +1,129 @@
+/* Task 1: Visual Foundation */
+:root {
+  --primary-color: #1d262f;
+  --accent-color: #6559d8;
+  --bg-light: #f4f4f4;
+  --text-main: #333333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-main);
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Times New Roman', serif;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Task 2: Interactive States & Transitions */
+a {
+  text-decoration: none;
+  color: var(--accent-color);
+  transition: color 0.3s, background-color 0.3s;
+}
+
+a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+  background-color: #d35400;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+input:focus, button:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Task 3: Product List Styling */
+.product-card {
+  display: inline-block;
+  width: 200px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.product-card:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.product-card:nth-child(even) {
+  background-color: #e9e9e9;
+}
+
+/* Task 4: Advanced Selectors & Pseudo-elements */
+.cart-container:empty {
+  background-color: #f8d7da;
+  color: #721c24;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.price::before {
+  content: "₱";
+}
+
+input:required {
+  border: 2px solid #e67e22;
+}
+
+input:valid {
+  border: 2px solid #2c3e50;
+}
+
+/* Task 5: Detailed Data Styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+table td:first-child {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.order-history li::marker {
+  color: var(--accent-color);
+  font-size: 1.2em;
+}
+
+.review::before {
+  content: "“";
+  font-size: 2em;
+  vertical-align: top;
+}
+
+.review::after {
+  content: "”";
+  font-size: 2em;
+  vertical-align: bottom;
+}
